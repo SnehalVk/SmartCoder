@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+h3 {
+  color: teal;
+}
+
+.jumbotron {
+  background-color: #428BCA;
+  align-content: center;
+  align-items: center;
+}
+
+a.hideDisplay {
+  position: relative;
+  /* This makes everything work.*/
+  /* Allows you to layer overlapping elements. */
+  z-index: 20;
+  color: #428BCA;
+  text-decoration: none
+}
+
+a.hideDisplay:hover {
+  /* Allows you to layer overlapping elements. */
+  z-index: 30;
+}
+
+a.hideDisplay span.showDisplayOnHover {
+  display: none
+}
+
+a.hideDisplay:hover span.showDisplayOnHover {
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  /* This sets the height of a line of text in the box. */
+  line-height: 25px;
+  /* These position the box where it needs to go. */
+  top: 5px;
+  right: 20px;
+  /* These adjust the size of the box when it appears. */
+  width: auto;
+  padding: 30px;
+  border: 1px solid #666666;
+  background-color: white;
+  /* text color */
+  color: #428BCA;
+  text-align: left;
+}
+
+span.showBodyOfDisplayOnHover {
+  font-size: 16px;
+  font-weight: normal;
+  color: #428BCA;
+  line-height: 18px;
+}
+
+#imaginary_container {
+  margin-top: 10%;
+  /* Don't copy this */
+}
+
+.stylish-input-group .input-group-addon {
+  background: white !important;
+}
+
+.stylish-input-group .form-control {
+  border-right: 40;
+  box-shadow: 0 0 0;
+  border-color: #ccc;
+}
+
+.stylish-input-group button {
+  border: 0;
+  background: transparent;
+}
+
+.outerpadding {
+  padding: 10% 0%;
+}
+
+.boximg {
+  position: relative;
+  overflow: hidden;
+}
+
+.boximg img {
+  transition: all ease-in 500ms;
+  border: 1px solid #fff;
+}
+
+.boximg img:hover {
+  transform: scale(1.3, 1.3);
+  cursor: pointer;
+}
+
+.boximg:hover {
+  border: 1px solid #fff;
+}
+
+.date {
+  left: 0;
+  position: absolute;
+  top: 15px;
+  padding: 5px;
+  background-color: teal;
+  opacity: 0;
+  transition: all ease-in 300ms;
+}
+
+.likebut {
+  background: none repeat scroll 0 0 teal;
+  height: 25px;
+  padding: 7px;
+  position: absolute;
+  right: 5px;
+  top: 130px;
+  width: 25px;
+  opacity: 0.4;
+  transition: all ease-in 300ms;
+}
+
+.boximg:hover .date {
+  opacity: 1;
+}
+
+.boximg:hover .likebut {
+  opacity: 1;
+}
+
+.featureinfo>p {
+  color: teal;
+  font-size: 16px;
+  padding-top: 4px;
+  text-align: left;
+}
+
+.btn-default {
+  text-shadow: 0px 1px 0px #FFF;
+  background-image: linear-gradient(to bottom, #FFF 0px, #E0E0E0 100%);
+  background-repeat: repeat-x;
+  border-color: #CCC;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-default:hover, .btn-default:focus {
+  background-color: #e0e0e0;
+  background-position: 0 -15px
+}
